@@ -1,4 +1,13 @@
 /* Write your CSS here. */
+@media screen and (max-width: 730px) {
+	/* Hide the "Boards" text, but leave the boards icon. */
+	.header-nav__button#search {
+		display: none; /* Hide the header search input field. */
+	}
+	.boards-label {
+		display: none;
+	}
+}
 body {
 	font-family: "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans",
 		"Helvetica Neue", sans-serif;
@@ -12,12 +21,26 @@ body {
 	padding: 4px;
 	color: white;
 	display: flex;
+	justify-content: space-between;
 }
 .header-nav__group {
 	display: flex;
-	margin: 15px;
-	padding: 15px;
+	justify-content: flex-start;
+	margin: 15px 0px;
+	padding: 15px 0px;
 }
+.header-nav__trello-logo {
+	display: flex;
+	align-items: center;
+}
+.header-nav__group#plus {
+	display: flex;
+	justify-content: flex-end;
+}
+.header-nav__button#alerts {
+	background-color: #cf513d;
+}
+
 
 /* Supplied CSS follows. */
 .header-nav__button {
