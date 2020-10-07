@@ -74,6 +74,60 @@ body {
 	margin: 0 5px;
 	color: #172b4d;
 }
+.board-1 {
+	background-image: url('./board-backgrounds/board-1-background.jpg');
+}
+.boards__container {
+	margin: 0 auto;
+	padding: 32px;
+	max-width: 1400px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.boards__sidebar {
+	background-color: #6c547b;
+	border-radius: 3px;
+	margin: 0 32px 32px 0;
+	padding: 0 20px 32px 20px;
+	max-height: 130px;
+	max-width: 180px;
+	width: 20%;
+	flex-shrink: 0;
+	flex-grow: 0;
+	flex-basis: 220px;
+}
+.boards__sidebar-content .title {
+	color: white;
+}
+.boards__sidebar-content a {
+	color: white;
+}
+.boards__sidebar-content .description {
+	color: lightblue;
+}
+.boards__group {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+}
+.boards__board {
+	background-color: black;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-weight: bold;
+	height: 100px;
+	margin: 0 8px 16px;
+	max-width: 250px;
+	padding: 4px 8px;
+	position: relative;
+	color: white;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 /* Supplied CSS follows. */
 .header-nav__button {
 	display: inline;
@@ -96,7 +150,6 @@ body {
 	height: 32px;
 	width: 32px;
 }
-
 .header-nav__button#search > input {
 	border-style: none;
 	border: none;
@@ -106,12 +159,10 @@ body {
 	-moz-box-shadow: none;
 	box-shadow: none;
 }
-
 .header-nav__button > .boards-label {
 	font-weight: 700;
 	padding-left: 4px;
 }
-
 .header-nav__trello-logo {
 	opacity: 0.5;
 	display: block;
@@ -129,14 +180,14 @@ body {
 		display: none;
 	}
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 501px) {
 	.tabbed-nav__group {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	.tabbed-nav__group,
 	.tabbed-nav__link {
 		display: block;
